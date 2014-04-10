@@ -15,7 +15,7 @@ $('.boom').click(function() {
   $('.wrapper').toggleClass("hidden");
   $('.personal-page').toggleClass("hidden");
   $('html, body').animate({
-    scrollTop: 0
+    scrollTop: 70
   }, 1000);
 });
 
