@@ -1,0 +1,1 @@
+console.log("'Allo 'Allo!"),$(".smooth").bind("click",function(a){a.preventDefault();var b=$(this).attr("href");$("html, body").animate({scrollTop:$(b).offset().top-68},1e3)});
