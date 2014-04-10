@@ -14,9 +14,15 @@ $(".smooth").bind("click", function(e) {
 $('.boom').click(function() {
   $('.wrapper').toggleClass("hidden");
   $('.personal-page').toggleClass("hidden");
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
 });
 
 $('.back').click(function() {
   $('.wrapper').toggleClass("hidden");
   $('.personal-page').toggleClass("hidden");
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
 })
