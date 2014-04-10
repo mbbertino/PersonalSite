@@ -1,6 +1,14 @@
 console.log('\'Allo \'Allo!');
 
-$('.thumbnail').hover(function() {
-  $(this).children('.thumbcontent').toggleClass('hidden')
-  $(this).css('cursor', 'pointer')
-})
+$("a").bind("click", function(e) {
+
+  e.preventDefault();
+  var location = $(this).attr("href")
+
+
+
+  $('html, body').animate({
+    scrollTop: $(location).offset().top - 68
+  }, 1000);
+
+});
