@@ -17,6 +17,10 @@ $brandalpha: #046380;
 $brandbeta: #8E001C;
 $brandbkgd: #FDFCF7;
 
+$break-small: 600px;
+@media screen and (max-width: $break-small) {
+    // this is where the media break changes go
+}
 
 body * {
 	font-family: 'Open Sans', sans-serif;
@@ -33,6 +37,7 @@ ul * {
 
 a {
 	color: $brandfont;
+
 	&:hover {		
 		color: $brandalpha;
 		border-bottom: 3px solid $brandalpha;
@@ -68,15 +73,17 @@ a {
 
 .hero {
 	background: $brandfont;
-	color: #fff;
+	color: #CECECE;
 	position: relative;	
-	padding: 160px 0 180px;
+	padding: 140px 0 160px;
 	letter-spacing: 2px;
 
 	h1 {
+		color: #fff;
 		text-transform: uppercase;
 		font-size: 48px;
 		margin-bottom: 0px;
+		text-shadow: 0px 5px 5px black;
 	}
 
 	h3 {
@@ -85,13 +92,21 @@ a {
 	}
 
 	p {
-
+		float: none;
+		margin: 0 auto;
+		overflow: hidden;
+		display: block;
 		font-size: 18px;
+		margin-bottom: 20px;
 	}
 
+	span  {
+		font-style: italic;
+		font-size: 20px;
+	}
 	a {
+		font-style: italic;
 		color: #fff;
-		text-decoration: underline;
 	}
 
 	.call {
@@ -107,45 +122,46 @@ a {
 	background: $brandbkgd;
 	text-align: center;
 
-	h2 {
-		margin: 0px 0px 30px;
+	.work-block {
+		margin: 20px 0;
+		padding: 0px;
+
+		img {
+			padding: 0px;
+			height: 350px;
+		}	
+
+		.thumbcontent {
+			text-align: left;
+			padding: 50px;
+
+			@media screen and (max-width: $break-small) {
+				text-align: center;
+			}
+
+			p {
+				margin: 30px 0px;
+				
+			}
+
+			h2 {
+				margin-bottom: 0px;
+			}
+
+			button {
+				text-align: center;
+				background: $brandalpha;
+
+				a {
+					color: #fff;					
+				}
+			}
+		}
 	}
 
-	.thumbnail-parent {
-		height: auto;
-
-		.thumbtainer {	
-			position: relative;
-			height: 250px;			
-			padding: 15px;
-			border-radius: none;	
-			
-			a {
-				color: #fff;
-			}
-
-			.thumbnail {
-				position: relative;
-				padding: 0px;
-				overflow: hidden;
-				height: 100%;
-				border-radius: 0px;	
-
-				img  {
-					height: 100%;
-					width: 100%;
-				}
-				.thumbcontent {
-					position: absolute;
-					padding: 0px;
-					background: black;
-					z-index: 10;
-					opacity: 0.8;
-					height: 70px;
-					top: 150px;
-				}		
-			}
-		}			
+	h2 {
+		text-transform: uppercase;
+		margin: 0px 0px 30px;
 	}
 }
 
