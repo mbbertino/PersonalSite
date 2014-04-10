@@ -1,6 +1,6 @@
 console.log('\'Allo \'Allo!');
 
-$("a").bind("click", function(e) {
+$(".smooth").bind("click", function(e) {
 
   e.preventDefault();
   var location = $(this).attr("href")
