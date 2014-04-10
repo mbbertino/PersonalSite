@@ -122,13 +122,18 @@ a {
 	background: $brandbkgd;
 	text-align: center;
 
+	h1 {
+		text-transform: uppercase;
+		font-size: 48px;
+	}
+
 	.work-block {
 		margin: 20px 0;
 		padding: 0px;
 
 		img {
 			padding: 0px;
-			height: 350px;
+			height: 300px;
 		}	
 
 		.thumbcontent {
@@ -172,7 +177,10 @@ a {
 	color: #fff;
 
 	h2 {
-		margin-bottom: 50px;
+		color: #fff;
+		font-size: 48px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
 	}
 
 	.skill-tainer {
