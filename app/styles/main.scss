@@ -49,6 +49,39 @@ a {
 	margin: 0 auto;
 }
 
+.personal-page {
+	margin-bottom: 70px;
+	padding: 20px 0px;
+	background: $brandalpha;
+	border-radius: 10px;
+	color: #fff; 
+	position: relative;
+	float: none;
+	margin: 0 auto;
+
+	h5 {
+		color: #CECECE;
+	}
+	h1 {
+		padding-left: 20px; 
+	}
+
+	img {
+		margin: 0 0 20px;
+		padding: 0px;
+		position: relative;		
+	} 
+	.personal-content {
+		padding: 20px;
+		background: $brandfont;
+	}
+	a {
+		font-style: italic;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
 .head {
 	z-index: 10;
 	background: $brandbkgd;
@@ -60,6 +93,12 @@ a {
 	letter-spacing: 1px;
 	padding: 20px 0;
 
+	.boom {
+		cursor: pointer;
+		@media screen and (max-width: $break-small) {
+			display: none;
+		}
+	}
 	ul {
 		padding-left: 0px;
 
@@ -77,6 +116,10 @@ a {
 	position: relative;	
 	padding: 140px 0 160px;
 	letter-spacing: 2px;
+
+	@media screen and (max-width: $break-small) {
+		padding: 10px 0 30px;
+	}
 
 	h1 {
 		color: #fff;
@@ -130,10 +173,16 @@ a {
 	.work-block {
 		margin: 20px 0;
 		padding: 0px;
+		overflow: hidden;
 
 		img {
+			left: -1px;
 			padding: 0px;
-			height: 300px;
+			height: 400px;
+
+			@media screen and (max-width: $break-small) {
+				height: 200px;
+			}
 		}	
 
 		.thumbcontent {
@@ -154,8 +203,13 @@ a {
 			}
 
 			button {
+				width: 100px;
 				text-align: center;
 				background: $brandalpha;
+
+				@media screen and (max-width: $break-small) {
+					display: none;
+				}
 
 				a {
 					color: #fff;					
@@ -180,7 +234,6 @@ a {
 		color: #fff;
 		font-size: 48px;
 		text-transform: uppercase;
-		margin-bottom: 30px;
 	}
 
 	.skill-tainer {
@@ -214,8 +267,8 @@ a {
 		}
 		h3 {
 			padding: 20px 0px;
-			border-top: 1px solid #CECECE;
-			border-bottom: 1px solid #CECECE;
+			// border-top: 1px solid #CECECE;
+			// border-bottom: 1px solid #CECECE;
 		}
 	}
 
