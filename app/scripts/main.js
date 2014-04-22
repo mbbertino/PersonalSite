@@ -11,16 +11,17 @@ $(".smooth").bind("click", function(e) {
 
 });
 
-$('.boom').click(function() {
-  $('.wrapper').toggleClass("hidden");
+$('.boom').click(function(e) {
+  e.preventDefault();
+  var location = $(this).attr("href")
+
   $('.personal-page').toggleClass("hidden");
   $('html, body').animate({
-    scrollTop: 70
+    scrollTop: $(location).offset().top - 70
   }, 1000);
 });
 
 $('.back').click(function() {
-  $('.wrapper').toggleClass("hidden");
   $('.personal-page').toggleClass("hidden");
   $('html, body').animate({
     scrollTop: 0

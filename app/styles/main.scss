@@ -50,12 +50,10 @@ a {
 }
 
 .personal-page {
-	margin-top: -70px;
 	padding: 20px 0px;
 	background: $brandalpha;
 	color: #fff; 
 	position: relative;
-	float: none;
 	margin: 0 auto;
 
 	h5 {
@@ -79,6 +77,10 @@ a {
 		color: #fff;
 		cursor: pointer;
 	}
+
+	h2 {
+		text-align: center;
+	}
 }
 
 .head {
@@ -92,12 +94,6 @@ a {
 	letter-spacing: 1px;
 	padding: 20px 0;
 
-	.boom {
-		cursor: pointer;
-		@media screen and (max-width: $break-small) {
-			display: none;
-		}
-	}
 	ul {
 		padding-left: 0px;
 
@@ -159,7 +155,7 @@ a {
 }
 
 .port {
-	padding: 50px 0;
+	padding: 30px 0;
 	position: relative;
 	background: $brandbkgd;
 	text-align: center;
@@ -256,6 +252,7 @@ a {
 		cursor: pointer;
 		color: #fff;
 	}
+
 	.top {
 		padding: 20px 0;				
 		background: $brandfont;
