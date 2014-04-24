@@ -109,11 +109,7 @@ a {
 }
 
 .hero {
-	// background-image:url('../images/pixel_weave.png');
 	background-image:url('../images/black_thread.png');
-	// background-image:url('../images/crissXcross.png');
-	// background-image:url('../images/escheresque_ste.png');
-	// background-image:url('../images/px_by_Gre3g.png');
 	background-repeat:repeat;
 	color: #CECECE;
 	position: relative;	
@@ -186,11 +182,7 @@ a {
 		img {
 			left: -1px;
 			padding: 0px;
-			height: 400px;
 
-			@media screen and (max-width: $break-small) {
-				height: 200px;
-			}
 		}	
 
 		.thumbcontent {
