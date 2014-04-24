@@ -37,10 +37,10 @@ ul * {
 
 a {
 	color: $brandfont;
+	cursor: pointer;
 
 	&:hover {		
 		color: $brandalpha;
-		border-bottom: 3px solid $brandalpha;
 		text-decoration: none;
 	}
 }
@@ -51,7 +51,7 @@ a {
 
 .personal-page {
 	padding: 20px 0px;
-	background: $brandalpha;
+	background: $brandbkgd;
 	color: #fff; 
 	position: relative;
 	margin: 0 auto;
@@ -61,6 +61,8 @@ a {
 	}
 	h1 {
 		padding-left: 20px; 
+		color: $brandalpha;
+		text-align: center;
 	}
 
 	img {
@@ -86,6 +88,7 @@ a {
 .head {
 	z-index: 10;
 	background: $brandbkgd;
+	box-shadow: 0px 5px 30px black;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -144,7 +147,12 @@ a {
 	}
 	a {
 		font-style: italic;
+		cursor: pointer;	
 		color: #fff;
+
+		&:hover {
+			color: $brandalpha;
+		}
 	}
 
 	.call {
@@ -221,7 +229,7 @@ a {
 
 .resume {
 	background: $brandalpha;
-	padding: 30px 0 50px;
+	padding: 30px 0 30px;
 	text-align: center;
 	color: #fff;
 
@@ -231,12 +239,16 @@ a {
 		text-transform: uppercase;
 	}
 
+	h4 {
+		margin-bottom: 30px;
+	}
+
 	.skill-tainer {
 		overflow: hidden;
 	}
 
 	.skill-block {
-		margin: 40px 0px;
+		margin: 15px 0px;
 		text-align: center;
 	}
 }
@@ -251,10 +263,15 @@ a {
 	a {
 		cursor: pointer;
 		color: #fff;
+		font-style: italic;
+
+		&:hover {
+			color: $brandalpha;
+		}
 	}
 
 	.top {
-		padding: 20px 0;				
+		padding: 20px 0 40px;				
 		background: $brandfont;
 
 		h2 {
@@ -262,10 +279,21 @@ a {
 			font-size: 48px;
 			text-transform: uppercase;
 		}
+
 		h3 {
-			padding: 20px 0px;
-			// border-top: 1px solid #CECECE;
-			// border-bottom: 1px solid #CECECE;
+			padding: 0px;
+		}
+
+		h4 {
+			margin-bottom: 30px;
+		}
+		
+		.block {
+			margin: 15px 0;
+		}
+
+		h5 {
+			margin-bottom: 0px;
 		}
 	}
 
