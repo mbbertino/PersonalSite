@@ -109,7 +109,12 @@ a {
 }
 
 .hero {
-	background: $brandfont;
+	// background-image:url('../images/pixel_weave.png');
+	background-image:url('../images/black_thread.png');
+	// background-image:url('../images/crissXcross.png');
+	// background-image:url('../images/escheresque_ste.png');
+	// background-image:url('../images/px_by_Gre3g.png');
+	background-repeat:repeat;
 	color: #CECECE;
 	position: relative;	
 	padding: 140px 0 160px;
